@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+	Student Information 
+</title>
+</head>
+<body>
+	<h1> Student Information </h1>
+	<table border="1">
+	{% for student in studentInfo %}
+	<tr>
+		<td>
+			{{ student[0] }}
+		</td>
+		<td>
+			{{ student[1] }}
+		</td>
+		<td>
+			{{ student[2] }}
+		</td>
+	</tr>
+	{% end %}
+	</table>
+</body>
+</html>
